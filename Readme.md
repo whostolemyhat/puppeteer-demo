@@ -2,9 +2,9 @@ Requires Node 9.*
 Start a local server in the `src` folder to serve the HTML:
 `cd src && http-server`
 
-While the page is being served, run the tests: `npm test`
+While the page is being served, run the tests: `npm test` (test expects page to be served on `localhost:8080`)
 
-The page makes a fetch request when something is typed into the input with a slight delay.
+The page makes a fetch request when something is typed into the input, with a slight delay.
 The test types a colour hex into the input, and is waiting for all network requests to finish before passing the test.
 
 With Puppeteer 1.2/1.3, the test always times out and never completes. With Puppeteer 0.11, the test passes (when updated to match syntax).
