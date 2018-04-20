@@ -1,0 +1,9 @@
+<input type='text' id='colour' />
+
+<script>
+    var input = document.querySelector('#colour');
+    input.addEventListener('input', function (e) {
+        console.log(e.target.value);
+        setTimeout(function () { fetch('http://localhost:8080'); }, 500)
+    });
+</script>
